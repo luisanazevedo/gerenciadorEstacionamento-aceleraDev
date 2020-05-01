@@ -13,7 +13,6 @@ public class Estacionamento {
 
 
     public void estacionar(Carro carro) {
-        boolean primeiroEhSenior = false;
         if(carro.getMotorista().getIdade() >= IDADE_MINIMA && carro.getMotorista().getPontos() <= PONTUACAO_MAXIMA ){
             if(estacionados.size() == LOTACAO_MAXIMA){
                 Carro removido = estacionados.stream()
